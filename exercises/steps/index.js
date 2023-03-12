@@ -17,6 +17,40 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+function steps(n) {
+
+    for (let row = 0; row < n; row++) {
+        let step = ""
+        for (let col = 0; col < n; col++) {
+
+            if (col <= row) {
+                step += '#'
+            } else {
+                step += ' '
+            }
+
+            // return step
+        }
+        console.log(step)
+    }
+
+    // return step
+}
+
+steps(4)
+// console.log(steps(4))
+
+
 
 module.exports = steps;
+
+'#   '
+'##  '
+'### '
+'####'
+
+// row 
+// column
+
+// there is a # if row and column are equal and if row is less than =n
+
